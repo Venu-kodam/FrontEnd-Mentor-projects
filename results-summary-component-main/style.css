@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 800px;
+    height: 500px;
+    display: flex;
+    box-shadow: 0 0 10px rgb(30, 54, 65);
+    margin-top: 80px;
+    border-radius:30px;
+}
+.result-container{
+    width: 430px;
+    background:  hsl(241, 81%, 54%);
+    text-align: center;
+    border-radius:30px;
+    color: #fff;
+}
+.result{
+    background: linear-gradient(rgb(67, 18, 201),hsla(241, 69%, 45%, 0));
+    box-shadow: 0 0 10px hsla(256, 72%, 46%, 1);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    margin-left: 25%;
+}
+span{
+    padding-top: 30px;
+    font-size: 60px;
+    font-weight: 700;
+}
+.summary{
+    color: black;
+    width: 370px;
+    padding: 30px;
+}
+.summary-items{
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content:space-between;
+}
+.summary-items p.summary-type{
+    margin-left: -140px;
+}
+.one{
+    background: hsl(0, 82%, 91%);
+    color:  hsl(0, 100%, 67%);
+}
+.two{
+    background: hsl(39, 74%, 93%);
+    color: hsl(39, 100%, 56%);
+}
+.three{
+    background: hsl(180, 95%, 92%);
+    color: hsl(166, 100%, 37%);
+}
+.four{
+    background: hsl(221, 100%, 96%);
+    color: hsl(234, 85%, 45%);
+}
+.summary-items p.percentage{
+    color: #111;
+}
+button{
+    margin-top: 30px;
+    padding: 15px;
+    background: hsl(224, 30%, 27%);
+    border: 0;
+    outline: none;
+    width: 100%;
+    border-radius: 30px;
+    font-size: 20px;
+    color: #fff;
+}
+@media (max-width:375px){
+    body{
+        width: 375px;
+        height: 100vh;
+    }
+    .container{
+        width: 500px;
+        height: fit-content;
+        margin-top: -70px;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .result-container{
+        width: 375px;
+        margin-left: 40px;
+        padding: 20px;
+    }
+    .result-container h3{
+        padding-top: 60px;
+    }
+    .result-container p{
+        padding-bottom: 40px;
+    }
+    .summary{
+        width: 370px;
+        padding: 40px;
+    }
+    .summary-items,.summary h2{
+        margin-left: 40px;
+    }
+    button{
+        margin-left: 40px;
+        padding: 15px;
+        width: 90%;
+    }
+    
+}
+
