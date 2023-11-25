@@ -7,8 +7,12 @@ https://venu-kodam.github.io/FrontEnd-Mentor-projects/Product%20Preview%20Card%2
 
 ## 2. Results-summary-component Webpage
 Simple Responsive Webpage Using Html and Css 
-It consists of two components - Results and Summary
 
 ## Live Link
 https://venu-kodam.github.io/FrontEnd-Mentor-projects/results-summary-component-main/index.html
+
+## 3. QR code componet Webpage
+Simple Responsive Webpage Using Html and Css for Laptop and Mobile
+## Live Link
+https://venu-kodam.github.io/FrontEnd-Mentor-projects/qr-code-component-main/index.html
 
