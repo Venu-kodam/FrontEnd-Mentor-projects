@@ -20,3 +20,8 @@ https://venu-kodam.github.io/FrontEnd-Mentor-projects/qr-code-component-main/ind
 Simple Responsive Profile card using Html and Css
 ## Live Link
 https://venu-kodam.github.io/FrontEnd-Mentor-projects/profile-card-component-main/index.html
+
+## 5. Order summary card component
+Responsive Profile card using Html and Css
+## Live Link
+https://venu-kodam.github.io/FrontEnd-Mentor-projects/order-summary-component-main/index.html
