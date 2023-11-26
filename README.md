@@ -25,3 +25,7 @@ https://venu-kodam.github.io/FrontEnd-Mentor-projects/profile-card-component-mai
 Responsive Profile card using Html and Css
 ## Live Link
 https://venu-kodam.github.io/FrontEnd-Mentor-projects/order-summary-component-main/index.html
+
+## 6. NFT Preview Card Component
+## Live Link
+https://venu-kodam.github.io/FrontEnd-Mentor-projects/nft-preview-card-component-main//index.html
