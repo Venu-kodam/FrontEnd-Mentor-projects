@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: 'Kumbh Sans';
+    }
+    .container{
+      width: 100%;
+      height: 100vh;
+      background:url(images/bg-pattern-top.svg),url(./images/bg-pattern-bottom.svg);
+      background-color: hsl(185, 75%, 39%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .profile-card{
+      width: 350px;
+      height: 380px;
+      background: #fff;
+      border-radius: 20px;
+    }
+    .img img{
+      border-radius: 20px 20px 0 0;
+    }
+    .profile-icon img{
+      border-radius: 50%;
+      position: relative;
+      top: -60px;
+      left: 120px;
+      border: 6px solid #fff;
+    }
+    .details{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 10px;
+      margin-top: -50px;
+    }
+
+    .socilamedia{
+      display: flex;
+      justify-content: space-evenly;
+    }
+    hr{
+      margin: 20px 0;
+      color: hsl(229, 23%, 23%);
+    }
+    .socilamedia h2{
+      font-size: 18px;
+    }
+    .socilamedia p{
+      margin-top: 10px;
+      font-size: 12px;
+      color: hsl(0, 0%, 59%);
+      letter-spacing: 2px;
+    }
+
+    @media (max-width:375px){
+      .container{
+        width: 375px;
+      }
+      .profile-card{
+        width: 320px;
+      }
+      .img img{
+        width: 320px;
+      }
+      .profile-icon img{
+        position: relative;
+        left: 110px;
+      }
+      .details{
+        margin-left: 28px;
+        column-gap: 10px;
+        margin-top: -50px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile-card">
+      <div class="img">
+        <img src="./images/bg-pattern-card.svg" alt="">
+      </div>
+      <div class="profile-icon">
+        <img src="./images/image-victor.jpg" alt="">
+      </div>
+      <div class="details">
+        <h2 style="font-size: 18px;">Victor Crest</h2>
+        <p style="font-size: 18px;color: hsl(0, 0%, 59%);">26</p>
+      </div>
+      <p style="text-align: center;margin-top:10px;color: hsl(0, 0%, 59%);">London</p>
+      <hr>
+      <div class="socilamedia">
+        <div class="following">
+          <h2>80K</h2>
+          <p>Followers</p>
+        </div>
+        <div class="likes">
+          <h2>803K</h2>
+          <p>Likes</p>
+        </div>
+        <div class="photos">
+          <h2>1.4K</h2>
+          <p>Photos</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
