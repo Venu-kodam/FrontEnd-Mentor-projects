@@ -29,3 +29,7 @@ https://venu-kodam.github.io/FrontEnd-Mentor-projects/order-summary-component-ma
 ## 6. NFT Preview Card Component
 ## Live Link
 https://venu-kodam.github.io/FrontEnd-Mentor-projects/nft-preview-card-component-main//index.html
+
+## 7. Stats-preview-card-component
+## Live Link
+https://venu-kodam.github.io/FrontEnd-Mentor-projects/stats-preview-card-component-main/index.html
