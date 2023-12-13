@@ -37,3 +37,7 @@ https://venu-kodam.github.io/FrontEnd-Mentor-projects/stats-preview-card-compone
 ## 8. 3-column-preview-card-component
 ## Live Link
 https://venu-kodam.github.io/FrontEnd-Mentor-projects/3-column-preview-card-component-main//index.html
+
+## 9. Testimonials-grid-section
+## Live Link
+https://venu-kodam.github.io/FrontEnd-Mentor-projects/testimonials-grid-section-main/index.html
