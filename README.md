@@ -33,3 +33,7 @@ https://venu-kodam.github.io/FrontEnd-Mentor-projects/nft-preview-card-component
 ## 7. Stats-preview-card-component
 ## Live Link
 https://venu-kodam.github.io/FrontEnd-Mentor-projects/stats-preview-card-component-main/index.html
+
+## 8. 3-column-preview-card-component
+## Live Link
+https://venu-kodam.github.io/FrontEnd-Mentor-projects/3-column-preview-card-component-main//index.html
