@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Overpass', sans-serif;
+    }
+
+    body {
+      width: 100%;
+      height: 100vh;
+      background: hsl(216, 12%, 8%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .rate-component,.thank-you {
+      width: 400px;
+      height: 450px;
+      background: hsl(213, 19%, 18%);
+      padding: 40px;
+      border-radius: 20px;
+    }
+
+    ul {
+      list-style: none;
+      margin: 30px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .rate-component img{
+      background: hsl(213, 20%, 22%);
+      padding: 15px;
+      border-radius: 50%;
+    }
+    h1,h2{
+      color: #fff;
+      margin: 20px 0 10px;
+    }
+    p{
+      color: hsl(217, 12%, 63%);
+      line-height: 25px;
+    }
+    .btn{
+      width: 50px;
+      height: 50px;
+      padding: 10px;
+      border-radius: 50%;
+      color: hsl(217, 12%, 63%);
+      background: hsl(213, 20%, 22%);
+      font-size: 16px;
+      border: 0;
+      cursor: pointer;
+    }
+    .btn:hover{
+      background: hsl(25, 97%, 53%);
+      color: #fff;
+      font-weight: 700;
+    }
+    .btn:focus{
+      color: #fff;
+      background: hsl(217, 12%, 63%);
+    }
+    #submitBtn{
+      width: 100%;
+      background: hsl(25, 97%, 53%);
+      border: 0;
+      padding: 13px;
+      border-radius: 30px;
+      font-size: 24px;
+      font-variant: small-caps;
+      letter-spacing: 3px;
+      color: #fff;
+      cursor: pointer;
+    }
+    #submitBtn:hover{
+      background: hsl(0, 0%, 100%);
+      color: hsl(25, 97%, 53%);
+      font-weight: 700;
+    }
+    .thank-you img{
+      display: block;
+      margin: 0 auto 40px;
+    }
+    .rating{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .rating p{
+      background: hsl(213, 20%, 22%);
+      color: hsl(25, 97%, 53%);
+      display: inline;
+      padding: 6px 15px;
+      border-radius: 20px;
+    }
+    .hidden{
+      display: none;
+    }
+
+    @media (max-width:375px){ /* media queries for Mobile view */ 
+      .rate-component,.thank-you {
+        width: 330px;
+        height: 450px;
+        padding: 20px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Rating state start -->
+  <div class="rate-component">
+    <img src="./images/icon-star.svg" alt="">
+    <h1>How did we do?</h1>
+    <p>Please let us know how we did with your support request. All feedback is appreciated
+      to help us improve our offering!
+    </p>
+    <ul>
+      <li><button class="btn">1</button></li>
+      <li><button class="btn">2</button></li>
+      <li><button class="btn">3</button></li>
+      <li><button class="btn">4</button></li>
+      <li><button class="btn">5</button></li>
+    </ul>
+    <button id="submitBtn">submit</button>
+  </div>
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+  <div class="thank-you hidden">
+    <img src="./images/illustration-thank-you.svg" alt="">
+    <div class="rating">
+      <p>You selected <span id="rating"></span> out of 5</p>
+      <h2>Thank you!</h2>
+    </div>
+    <p style="text-align: center;">We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!
+    </p>
+  </div>
+
+  <!-- Thank you state end -->
+
+  <script src="./script.js"></script>
+</body>
+</html>
