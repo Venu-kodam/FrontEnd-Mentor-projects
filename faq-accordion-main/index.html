@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | FAQ accordion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Work Sans', sans-serif;
+    }
+    body{
+      background: hsl(275, 100%, 97%);
+    }
+    .container {
+      width: 100%;
+      background: hsl(275, 100%, 97%);
+    }
+    .accordian {
+      width: 650px;
+      background: #fff;
+      border-radius: 20px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .accordian li{
+      list-style: none;
+      width: 100%;
+      padding: 2% 5%;
+      margin: 10px 0;
+      border-bottom: 1px solid #f1f1f1;
+      border-radius: 10px;
+    }
+    .accordian li:last-child{
+      border-bottom: 0;
+    }
+    .accordian li label{
+      width: 90%;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 10px 0 ;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+    .accordian li label::after{
+      content:url(./assets/images/icon-plus.svg);
+      margin-right: -5px;
+      font-size: 22px;
+    }
+    input[type="radio"]{
+      display: none;
+      cursor: pointer;
+    }
+    .accordian .content{
+      font-size: 16px;
+      line-height: 25px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s;
+    }
+    .accordian input[type="radio"]:checked + label + .content{
+      max-height: 300px;
+    }
+    .accordian input[type="radio"]:checked + label::after{
+      content:url(./assets/images/icon-minus.svg);
+    }
+    @media (max-width:375px){
+      .container{
+        width: 100%;
+      }
+      .accordian {
+        width: 95%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="./assets/images/background-pattern-desktop.svg" width="100%" alt="">
+    <div class="accordian">
+      <div class="header" style="padding: 2% 5%;">
+        <img src="./assets/images/icon-star.svg" alt="">
+        <h1 style="font-size: 50px;">FAQs</h1>
+      </div>
+      <ul>
+        <li>
+          <input type="radio" id="first" name="accordian" checked>
+          <label for="first">
+            What is Frontend Mentor, and how will it help me?
+          </label>
+          <div class="content">
+            Frontend Mentor offers realistic coding challenges to help developers improve their
+            frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
+            all levels and ideal for portfolio building.
+          </div>
+        </li>
+        <li>
+          <input type="radio" id="second" name="accordian">
+          <label for="second">
+            Is Frontend Mentor free?
+          </label>
+          <div class="content">
+            Yes, Frontend Mentor offers both free and premium coding challenges, with the free
+            option providing access to a range of projects suitable for all skill levels.
+          </div>
+        </li>
+        <li>
+          <input type="radio" id="third" name="accordian">
+          <label for="third">
+            Can I use Frontend Mentor projects in my portfolio?
+          </label>
+          <div class="content">
+            Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+            way to showcase your skills to potential employers!
+          </div>
+        </li>
+        <li>
+          <input type="radio" id="fourth" name="accordian">
+          <label for="fourth">
+            How can I get help if I'm stuck on a Frontend Mentor challenge?
+          </label>
+          <div class="content">
+            The best place to get help is inside Frontend Mentor's Discord community. There's a help
+            channel where you can ask questions and seek support from other community members.
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+</body>
+
+</html>
