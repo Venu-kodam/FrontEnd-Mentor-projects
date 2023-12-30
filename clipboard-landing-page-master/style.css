@@ -96,7 +96,7 @@
   }
 
   /* Media queries For Mobile View */
-  @media (max-width:375px){
+  @media (max-width:500px){
     .container{
       width: 1200px;
       height:100vh;
